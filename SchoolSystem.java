@@ -1,18 +1,17 @@
 package SchoolHomework;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
 /*
-* （1）SchoolSystem (Integer big, Integer medium, Integer small) 初始化 SchoolSystem类，三个参数分别对应每种班级的剩余名额。
+（1）SchoolSystem (Integer big, Integer medium, Integer small) 初始化 SchoolSystem类，三个参数分别对应每种班级的剩余名额。
 （2）bool addStudent(Integer stuType) 检查是否有 stuType对应的班级。 stuType有三种类型：大，中，小，分别用数字 1， 2 和 3 表示。一个学生只能在stuType对应的班级中。
-* 如果没有剩余多的班级人数，请返回 false ，否则将该学生录入班级并返回true。
+如果没有剩余多的班级人数，请返回 false ，否则将该学生录入班级并返回true。
 （3）String[] parse(String input) 解析输入字符串（格式见示例）,返回字符串数组
 （4）void print() 输出结果（格式见示例）
 【示例】
 输入：
-["SchoolSystem", "addStudent", "addStudent", "addStudent", "addStudent"]
-[[1, 1, 0], [1], [2], [3], [1]]
+"SchoolSystem", "addStudent", "addStudent", "addStudent", "addStudent"
+[1, 1, 0], [1], [2], [3], [1]
 输出：
 [null, true, true, false, false]
 【解释】：
@@ -21,19 +20,9 @@ schoolSystem. addStudent (1); // 返回 true ，因为有 1 个剩余的大班�
 schoolSystem. addStudent (2); // 返回 true ，因为有 1 个剩余的中班名额
 schoolSystem. addStudent (3); // 返回 false ，因为没有剩余的小班名额
 schoolSystem. addStudent (1); // 返回 false ，因为没有剩余的大班名额，唯一1个大班名额已经被占据了
-【需要实现的接口及代码主体参考】：
-
-
-
-
-*输入：
-["SchoolSystem", "addStudent", "addStudent", "addStudent", "addStudent"]
-[[1, 1, 0], [1], [2], [3], [1]]
-输出：
-[null, true, true, false, false]
-
 *
 * */
+
 //报名入学接口
 interface ISignUp {
     // 打印输出结果
@@ -47,8 +36,7 @@ interface ISignUp {
         Scanner sc=new Scanner(System.in);
         String str=sc.nextLine();
         String str2=sc.nextLine();
-        String[] split =str2.split("]");
-        return split;
+        return str2.split("]");
     }
 }
 interface IParams {
