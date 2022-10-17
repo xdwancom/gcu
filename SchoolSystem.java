@@ -24,8 +24,7 @@ schoolSystem. addStudent (1); // 返回 false ，因为没有剩余的大班名�
 【需要实现的接口及代码主体参考】：
 
 
-/////
-/////
+/////////////////
 
 *输入：
 ["SchoolSystem", "addStudent", "addStudent", "addStudent", "addStudent"]
